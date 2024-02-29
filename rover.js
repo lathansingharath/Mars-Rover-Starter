@@ -28,12 +28,10 @@ class Rover {
          }
 
          if (message.commands[i].commandType === "MODE_CHANGE"){
-            if (message.commands[i].value === this.mode) {
-               returningObj.results.push({completed: false});
-            } else {                                             //else is part of test #12
+                                                     //else is part of test #12
                this.mode = message.commands[i].value;            //
                returningObj.results.push({completed: true});     //
-            }         
+                
          }
       }
      
