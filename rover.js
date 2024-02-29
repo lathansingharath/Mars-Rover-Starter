@@ -28,9 +28,9 @@ class Rover {
          }
 
          if (message.commands[i].commandType === "MODE_CHANGE"){
-                                                     //else is part of test #12
-               this.mode = message.commands[i].value;            //
-               returningObj.results.push({completed: true});     //
+                                                     
+               this.mode = message.commands[i].value;            
+               returningObj.results.push({completed: true});     
                 
          }
       }
